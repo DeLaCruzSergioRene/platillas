@@ -10,14 +10,14 @@ def index():
     
     
 @app.route("/2")
-def index():
+def habilidades():
     habilidades_escudo = ["Escudo de Aire", "Escudo Meteoro", "Prisión de Escudo"]
     autor = "Naofumi Iwatani (Héroe Del Escudo)"
     return render_template("index2.html", nombre = autor, habilidades_escudo = habilidades_escudo)
     
     
 @app.route("/3")
-def index():
+def utilidades():
     caracteristicas = ["Escudo De Aire crea un escudo traslucido de color verde en el aire que protege donde se invoque y resiste cierto daño.", "Escudo Meteoro usa los SP del usuario para resistir todo el daño que sea necesario, consumiendo mas y mas mientras se siga usando.", "Prisión De Escudo crea una esfera hecha de escudos que protege o encierra a quien este dentro según su uso."]
     autor = "Naofumi Iwatani (Héroe Del Escudo)"
     return render_template("index3.html", nombre = autor, caracteristicas = caracteristicas)
