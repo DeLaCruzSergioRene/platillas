@@ -11,7 +11,7 @@ def index():
     
 @app.route("/2")
 def habilidades():
-    habilidades_escudo = ["Escudo de Aire", "Escudo Meteoro", "Prisión de Escudo"]
+    habilidades_escudo = ["Escudo de Aire.", "Escudo Meteoro.", "Prisión de Escudo."]
     autor = "Naofumi Iwatani (Héroe Del Escudo)"
     return render_template("index2.html", nombre = autor, habilidades_escudo = habilidades_escudo)
     
